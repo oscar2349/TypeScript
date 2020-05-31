@@ -1,16 +1,20 @@
 "use strict";
-var Persona = /** @class */ (function () {
-    function Persona(nombre) {
+class Persona {
+    constructor(nombre, Apellido) {
         this.nombre = nombre;
+        this.Apellido = Apellido;
     }
-    Persona.prototype.getNombre = function () {
+    getNombre() {
         return this.nombre;
-    };
-    Persona.metodoEstatico = function () {
+    }
+    getApellido() {
+        return this.Apellido;
+    }
+    static metodoEstatico() {
         return 10;
-    };
-    return Persona;
-}());
-var persona1 = new Persona("Juan");
+    }
+}
+let persona1 = new Persona("Juan", "Ramirez");
 console.log(persona1.getNombre());
+console.log(persona1.getApellido());
 console.log(Persona.metodoEstatico());

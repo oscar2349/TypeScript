@@ -1,14 +1,14 @@
 'use strict';
-var saludo = "!!!!TypeScript";
+let saludo = "!!!!TypeScript";
 saludo = "Nuevo Saludo desde TypeScript";
-var numero; //let numero = 10;
+let numero; //let numero = 10;
 numero = 10;
-var cualquiera;
+let cualquiera;
 cualquiera = "cadena";
 cualquiera = 10;
-var espacio;
+let espacio;
 espacio = "esto es una prueba";
-var PI_NUMERO = 3.14;
+const PI_NUMERO = 3.14;
 function saludar() {
     console.log(saludo, numero);
     console.log(PI_NUMERO);
