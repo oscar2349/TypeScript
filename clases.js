@@ -1,6 +1,9 @@
 "use strict";
 class Persona {
     constructor(nombre, Apellido) {
+        if (Apellido == null) {
+            Apellido = " Apellido no Ingresado";
+        }
         this.nombre = nombre;
         this.Apellido = Apellido;
     }
@@ -14,7 +17,8 @@ class Persona {
         return 10;
     }
 }
-let persona1 = new Persona("Juan", "Ramirez");
-console.log(persona1.getNombre());
-console.log(persona1.getApellido());
+let persona1 = new Persona("Juan");
+let persona2 = new Persona("Oscar", "Rodriguez");
+console.log(persona1.getNombre() + persona1.getApellido());
+console.log(persona2.getNombre() + persona2.getApellido());
 console.log(Persona.metodoEstatico());

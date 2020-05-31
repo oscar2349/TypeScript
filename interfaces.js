@@ -9,3 +9,9 @@ let avion = {
     }
 };
 avion.abordarTransporte();
+let OtraInterfaz = {
+    Transporte: function (prueba) {
+        console.log(`${prueba} Otra interfaz`);
+    }
+};
+OtraInterfaz.Transporte("Ejemplo");
